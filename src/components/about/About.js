@@ -13,25 +13,42 @@ export default function About() {
             <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cat
                 about{firstName} </p>
             <p><span style={{color: info.baseColor}}>about{firstName} <span
-                className={Style.green}>(main)</span> $ </span>
+                className={Style.green} padding={'1rem'}>(main)</span> $ </span>
                 {info.bio}
             </p>
         </>;
     }
 
+/*     function experience() {
+        return <>
+            <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd
+                work_experience </p>
+            <p><span style={{color: info.baseColor}}>work_experience <span
+                className={Style.green}>(main)</span> $ </span>
+                {info.bio}
+            </p>
+        </>;
+    } */
+
     function skillsText() {
         return <>
-            <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd skills/tools
+            <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd skills
             </p>
-            <p><span style={{color: info.baseColor}}>skills/tools <span
+            <p><span style={{color: info.baseColor}}>skills <span
                 className={Style.green}>(main)</span> $</span> ls</p>
+
+            <p style={{color: info.baseColor}}> Principal</p>
+            <ul className={Style.skills}>
+                {info.skills.principal.map(proficiency => <li>{proficiency}</li>)}
+            </ul>
+            
             <p style={{color: info.baseColor}}> Proficient With</p>
             <ul className={Style.skills}>
                 {info.skills.proficientWith.map(proficiency => <li>{proficiency}</li>)}
             </ul>
-            <p style={{color: info.baseColor}}> Exposed To</p>
+            <p style={{color: info.baseColor}}> Learning</p>
             <ul className={Style.skills}>
-                {info.skills.exposedTo.map(skill => <li>{skill}</li>)}
+                {info.skills.learning.map(skill => <li>{skill}</li>)}
             </ul>
         </>;
     }
