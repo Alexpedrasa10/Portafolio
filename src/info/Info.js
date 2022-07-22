@@ -60,6 +60,7 @@ export const info = {
 
     ],
     bio: "Hello! I'm Alex. I'm a Ssr Backend Developer in Key Data. I'm twenty years old. Two years ago, during pandemic, I have studied Web Development self-taught. I am currently studying Solidity and various technologies oriented to Blockchain and Web3.",
+    work_experience: "I Started two years ago in Key Data as Frontend Developer with AngularJS. I learned a lot of my co-workers. I was learning for myself backend tecnlogies like PHP, Laravel and SQL. Now, I'm the developer with more time in the enterprise and I manage our servers in development and production enviroment.",
     skills:
         {
             principal : ['PHP', 'Laravel', 'aa','SQL','Linux','Javascript', 'Git', 'MongoDB'],

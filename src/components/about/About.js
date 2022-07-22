@@ -16,6 +16,13 @@ export default function About() {
                 className={Style.green} padding={'1rem'}>(main)</span> $ </span>
                 {info.bio}
             </p>
+
+            <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cat
+                work_experience </p>
+            <p><span style={{color: info.baseColor}}>work_experience <span
+                className={Style.green} padding={'1rem'}>(main)</span> $ </span>
+                {info.work_experience}
+            </p>
         </>;
     }
 
