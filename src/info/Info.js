@@ -1,8 +1,8 @@
 import self from "../img/self.jpeg"
-import mock1 from "../img/mock1.png"
-import mock2 from "../img/mock2.png"
-import mock3 from "../img/mock3.png"
-import mock4 from "../img/mock4.png"
+import mock1 from "../img/tarjet.jpg"
+import mock2 from "../img/covid.jpg"
+import mock3 from "../img/climate.jpg"
+import mock4 from "../img/ec.png"
 import mock5 from "../img/mock5.png"
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
@@ -80,39 +80,48 @@ export const info = {
             label: 'Movies',
             emoji: '🎥'
         }
-// Same as above, change the emojis to match / relate to your hobbies or interests.
-// You can also remove the emojis if you'd like, I just think they look cute :P
     ],
-    portfolio: [ // This is where your portfolio projects will be detailed
+    portfolio: [
         {
-            title: "Project 1",
-            live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
-            image: mock1
+            title: "E-Commerce",
+            live: "http://ecommerce-ap10.herokuapp.com/dashboard",
+            source: "https://github.com/Alexpedrasa10/EC",
+            image: mock4,
+            description : "Ecommerce made it with Laravel Jetstream, an full-stack framework. I Started this project for get experience with PHP and Jetstream because in my job we are working in a new project with this tecnologies. It's not finished. (Not work in live demo because the database host is not free)",
+            items:[
+                "Admin user can delete, add and edit products.",
+                "In Product edit, can associate the product with others and assing categories",
+                "Use MercadoPago, Paypal and Bitcoin (Lightning Network) as payment gateway",
+                "For Paypal method, use an API to convert ARS to USD in the price of usd 'blue' in real time",
+                "Bitcoin payment is suspended because error with Buda API",
+                "Integrate DropBox",
+                "Full Responsive",
+                "Login with Facebook and Google (Laravel Socialite)",
+            ]
         },
         {
-            title: "Project 2",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock2
+            title: "Weather app",
+            live: "https://github.com/Alexpedrasa10/Clima",
+            source: "https://app-clima-alexpedrasa10.herokuapp.com/",
+            image: mock3,
+            description : "This app show the climate of any city from any country in the world in real time. Made with Angular.",
+            items : []
         },
         {
-            title: "Project 3",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock3
+            title: "Covid 19 Test",
+            live: "https://pedantic-kirch-17f259.netlify.app/",
+            source: "https://github.com/Alexpedrasa10/Covid",
+            image: mock2,
+            description : "SPA Responsive with Covid-19 test. Calculate the odds of having covid-19 from the patient's symptoms and age. And in the page 'stats', show all patients with covid-19 positive, deads and recovered in Argentina in real time. This project I made with Vue.js.",
+            items : []
         },
         {
-            title: "Project 4",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock4
+            title: "Credit Cart Form",
+            live: "https://alexpedrasa10.github.io/formulario-tarjeta/", 
+            source: "https://github.com/Alexpedrasa10/formulario-tarjeta", 
+            image: mock1,
+            description : "This is my first project, i made with only HTML5, CSS and Javascript. If the card number starts with 4, in the margin top-right show Visa's logo and if starts with 5 put the Mastercard's logo.",
+            items : []
         },
-        {
-            title: "Project 5",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock5
-        }
     ]
 }
