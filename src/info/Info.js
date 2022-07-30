@@ -78,8 +78,8 @@ export const info = {
             emoji: '💻'
         },
         {
-            label: 'Movies',
-            emoji: '🎥'
+            label: 'Music',
+            emoji: '🎵'
         }
     ],
     portfolio: [
