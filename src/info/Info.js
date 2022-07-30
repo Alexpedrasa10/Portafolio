@@ -2,8 +2,8 @@ import self from "../img/self.jpeg"
 import mock1 from "../img/tarjet.jpg"
 import mock2 from "../img/covid.jpg"
 import mock3 from "../img/climate.jpg"
-import mock4 from "../img/ec.png"
-import mock5 from "../img/mock5.png"
+import mock4 from "../img/ec.jpg"
+import mock5 from "../img/KempesNFT.png"
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
 how to make this template work best for you! */
@@ -59,11 +59,11 @@ export const info = {
 // Just change the links so that they lead to your social profiles.
 
     ],
-    bio: "Hello! I'm Alex. I'm a Ssr Backend Developer in Key Data. I'm twenty years old. Two years ago, during pandemic, I have studied Web Development self-taught. I am currently studying Solidity and various technologies oriented to Blockchain and Web3.",
+    bio: "Hello! I'm Alex. I'm a Ssr Backend Developer in Key Data. I'm twenty years old. Two years ago, during pandemic, I have studied Web Development self-taught. I am currently studying Solidity and various technologies oriented to Blockchain and Web3. Also, I'm learning English in Rosetta Stones.",
     work_experience: "I Started two years ago in Key Data as Frontend Developer with AngularJS. I learned a lot of my co-workers. I was learning for myself backend tecnlogies like PHP, Laravel and SQL. Now, I'm the developer with more time in the enterprise and I manage our servers in development and production enviroment.",
     skills:
         {
-            principal : ['PHP', 'Laravel', 'aa','SQL','Linux','Javascript', 'Git', 'MongoDB'],
+            principal : ['PHP', 'Laravel','SQL','Linux','Javascript', 'Git', 'MongoDB'],
             proficientWith: ['Python','Jetstream','Angular', 'Lumen','Vue.js', 'HTML5', 'CSS', 'Sass', 'Bootstrap', 'TailwindCSS'],
             learning: ['React.js', 'Solidity']
         }
@@ -83,6 +83,14 @@ export const info = {
         }
     ],
     portfolio: [
+        {
+            title: "MAK NFT",
+            live: "https://testnets.opensea.io/assets/rinkeby/0x03ed82ce0ac8edb3fb35631ef5923b3692d9b45a/1d",
+            source: "https://gist.github.com/Alexpedrasa10/5c8dd357dc2e4567316c14b78bc214de",
+            image: mock5,
+            description : "This is my first Token ERC721. It's a photo I take in a football match. I made it in Remix and deployed in OpenSea Rinkeby testnet.",
+            items : []
+        },
         {
             title: "E-Commerce",
             live: "http://ecommerce-ap10.herokuapp.com/dashboard",
