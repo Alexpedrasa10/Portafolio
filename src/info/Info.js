@@ -85,7 +85,7 @@ export const info = {
     portfolio: [
         {
             title: "MAK NFT",
-            live: "https://testnets.opensea.io/assets/rinkeby/0x03ed82ce0ac8edb3fb35631ef5923b3692d9b45a/1d",
+            live: "https://testnets.opensea.io/assets/rinkeby/0x03ed82ce0ac8edb3fb35631ef5923b3692d9b45a/1/",
             source: "https://gist.github.com/Alexpedrasa10/5c8dd357dc2e4567316c14b78bc214de",
             image: mock5,
             description : "This is my first Token ERC721. It's a photo I take in a football match. I made it in Remix and deployed in OpenSea Rinkeby testnet.",
