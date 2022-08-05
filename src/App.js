@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.module.scss';
 import BaseLayout from "./components/BaseLayout";
-import {HashRouter} from "react-router-dom";
+import {BrowserRouter} from "react-router-dom";
 
 function App() {
    return (
       <div>
-         <HashRouter basename={process.env.PUBLIC_URL}>
+         <BrowserRouter>
             <BaseLayout/>
-         </HashRouter>
+         </BrowserRouter>
       </div>
    );
 }

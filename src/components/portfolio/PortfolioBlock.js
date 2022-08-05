@@ -8,7 +8,6 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import { Button, ButtonGroup } from '@mui/material';
-import { Link } from 'react-router-dom';
 
 function PortfolioBlock(props) {
    const {image, live, source, title, description, items} = props;
