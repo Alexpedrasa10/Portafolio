@@ -48,14 +48,25 @@ export default function About() {
             <ul className={Style.skills}>
                 {info.skills.principal.map(proficiency => <li>{proficiency}</li>)}
             </ul>
+
+            <p style={{color: info.baseColor}}> Databases</p>
+            <ul className={Style.skills}>
+                {info.skills.database.map(database => <li>{database}</li>)}
+            </ul>
+
+            <p style={{color: info.baseColor}}> Cloud</p>
+            <ul className={Style.skills}>
+                {info.skills.cloud.map(cloud => <li>{cloud}</li>)}
+            </ul>
             
+            <p style={{color: info.baseColor}}> Frontend</p>
+            <ul className={Style.skills}>
+                {info.skills.frontend.map(frontend => <li>{frontend}</li>)}
+            </ul>
+
             <p style={{color: info.baseColor}}> Proficient With</p>
             <ul className={Style.skills}>
                 {info.skills.proficientWith.map(proficiency => <li>{proficiency}</li>)}
-            </ul>
-            <p style={{color: info.baseColor}}> Learning</p>
-            <ul className={Style.skills}>
-                {info.skills.learning.map(skill => <li>{skill}</li>)}
             </ul>
         </>;
     }

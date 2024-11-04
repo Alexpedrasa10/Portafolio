@@ -4,6 +4,7 @@ import mock2 from "../img/covid.jpg"
 import mock3 from "../img/climate.jpg"
 import mock4 from "../img/ec.jpg"
 import mock5 from "../img/KempesNFT.png"
+import mock6 from "../img/goapi.png"
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
 how to make this template work best for you! */
@@ -35,7 +36,7 @@ export const info = {
     miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
         {
             emoji: "💼",
-            text: "Backend Developer in Key Data"
+            text: "Backend Developer at Key Data"
         },
         {
             emoji: '🌎',
@@ -59,13 +60,15 @@ export const info = {
 // Just change the links so that they lead to your social profiles.
 
     ],
-    bio: "Hello! I'm Alex. I'm a Ssr Backend Developer in Key Data. I'm twenty years old. Two years ago, during pandemic, I have studied Web Development self-taught. I am currently studying Solidity and various technologies oriented to Blockchain and Web3. Also, I'm learning English in Rosetta Stones.",
-    work_experience: "I Started two years ago in Key Data as Frontend Developer with AngularJS. I learned a lot of my co-workers. I was learning for myself backend tecnlogies like PHP, Laravel and SQL. Now, I'm the developer with more time in the enterprise and I manage our servers in development and production enviroment.",
+    bio: "I’m a self-taught backend developer specializing in building scalable and robust solutions. Since 2020, I’ve delved into web technologies, combining curiosity with the ability to solve complex problems. At Key Data, I apply my skills to optimize systems and work with international clients.",
+    work_experience: "My career began in October 2020 at Key Data as a Frontend Developer (AngularJS), before transitioning to backend development with PHP Laravel. Over time, I expanded my expertise in database management and server administration, eventually leading my team by 2023, resolving critical production issues. I later joined South Hive as an Ssr Backend Developer, where I contributed to Córdoba's municipal tax and financial systems, creating new features and migrating projects to the cloud. Currently, I'm back at Key Data, managing multiple projects—primarily a healthcare-focused initiative in Colombia—and contributing to an AI-driven project.",
     skills:
         {
-            principal : ['PHP', 'Laravel','SQL','Linux','Javascript', 'Git', 'MongoDB'],
-            proficientWith: ['Python','Jetstream','Angular', 'Lumen','Vue.js', 'HTML5', 'CSS', 'Sass', 'Bootstrap', 'TailwindCSS'],
-            learning: ['React.js', 'Solidity']
+            principal : ['PHP', 'Laravel','Javascript', 'Linux'],
+            database : ['MySQL', 'PostgreSQL', 'MongoDB', 'SQLite'],
+            cloud : ['AWS', 'DigitalOcean'],
+            frontend : ['HTML', 'CSS', 'Angular', 'Vue.js', 'React.js', 'TailwindCSS'],
+            proficientWith: ['Python', 'Golang', 'TypeScript', 'Docker'],
         }
     ,
     hobbies: [
@@ -83,6 +86,13 @@ export const info = {
         }
     ],
     portfolio: [
+        {
+            title: "Clients API",
+            source: "https://github.com/Alexpedrasa10/goclients",
+            image: mock6,
+            description : "CRUD Clients with Golang, SQLite and Docker.",
+            items : []
+        },
         {
             title: "MAK NFT",
             live: "https://testnets.opensea.io/assets/rinkeby/0x03ed82ce0ac8edb3fb35631ef5923b3692d9b45a/1/",
