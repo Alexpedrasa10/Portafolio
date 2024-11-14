@@ -40,7 +40,7 @@ export const info = {
         },
         {
             emoji: '🌎',
-            text: 'Córdoba, Argentina'
+            text: 'Córdoba, Argentina 🇦🇷'
         },
         {
             emoji: "📧",
@@ -68,7 +68,7 @@ export const info = {
             database : ['MySQL', 'PostgreSQL', 'MongoDB', 'SQLite'],
             cloud : ['AWS', 'DigitalOcean'],
             frontend : ['HTML', 'CSS', 'Angular', 'Vue.js', 'React.js', 'TailwindCSS'],
-            proficientWith: ['Python', 'Golang', 'TypeScript', 'Docker'],
+            proficientWith: ['Python', 'Golang', 'NodeJs', 'Docker'],
         }
     ,
     hobbies: [
@@ -91,7 +91,8 @@ export const info = {
             source: "https://github.com/Alexpedrasa10/goclients",
             image: mock6,
             description : "CRUD Clients with Golang, SQLite and Docker.",
-            items : []
+            items : [],
+            technologies : ['Golang', 'SQLite', 'Docker']
         },
         {
             title: "MAK NFT",
@@ -99,7 +100,8 @@ export const info = {
             source: "https://gist.github.com/Alexpedrasa10/5c8dd357dc2e4567316c14b78bc214de",
             image: mock5,
             description : "This is my first Token ERC721. It's a photo I take in a football match. I made it in Remix and deployed in OpenSea Rinkeby testnet.",
-            items : []
+            items : [],
+            technologies : ['Golang', 'SQLite', 'Docker']
         },
         {
             title: "E-Commerce",
@@ -116,15 +118,17 @@ export const info = {
                 "Integrate DropBox",
                 "Full Responsive",
                 "Login with Facebook and Google (Laravel Socialite)",
-            ]
+            ],
+            technologies : ['PHP', 'Laravel', 'MySQL', 'Javascript','TailwindCSS','HTML', 'CSS']
         },
         {
             title: "Weather app",
-            live: "https://github.com/Alexpedrasa10/Clima",
-            source: "https://app-clima-alexpedrasa10.herokuapp.com/",
+            live: "https://app-clima-alexpedrasa10.herokuapp.com/",
+            source: "https://github.com/Alexpedrasa10/Clima",
             image: mock3,
             description : "This app show the climate of any city from any country in the world in real time. Made with Angular.",
-            items : []
+            items : [],
+            technologies : ['HTML', 'CSS', 'Javascript', 'Vue.js']
         },
         {
             title: "Covid 19 Test",
@@ -132,7 +136,8 @@ export const info = {
             source: "https://github.com/Alexpedrasa10/Covid",
             image: mock2,
             description : "SPA Responsive with Covid-19 test. Calculate the odds of having covid-19 from the patient's symptoms and age. And in the page 'stats', show all patients with covid-19 positive, deads and recovered in Argentina in real time. This project I made with Vue.js.",
-            items : []
+            items : [],
+            technologies : ['HTML', 'CSS', 'Javascript', 'Vue.js']
         },
         {
             title: "Credit Cart Form",
@@ -140,7 +145,8 @@ export const info = {
             source: "https://github.com/Alexpedrasa10/formulario-tarjeta", 
             image: mock1,
             description : "This is my first project, i made with only HTML5, CSS and Javascript. If the card number starts with 4, in the margin top-right show Visa's logo and if starts with 5 put the Mastercard's logo.",
-            items : []
+            items : [],
+            technologies : ['HTML', 'CSS', 'Javascript']
         },
     ]
 }

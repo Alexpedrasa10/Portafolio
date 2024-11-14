@@ -8,9 +8,10 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import { Button, ButtonGroup } from '@mui/material';
+import { iconsMap } from '../Icon';
 
 function PortfolioBlock(props) {
-   const {image, live, source, title, description, items} = props;
+   const {image, live, source, title, description, items, technologies} = props;
 
    return (
       <Box display={'flex'} flexDirection={'column'} p={5} justifyContent={'center'} alignItems={'center'}>
@@ -29,6 +30,14 @@ function PortfolioBlock(props) {
                   </ListItem>
             ))}
         </List>
+        <Box display="flex" fontSize={'1rem'} gap="2rem" mt="1rem">
+            {technologies.map((tech, index) => (
+               <Box key={index} display="flex" alignItems="center">
+                  {iconsMap[tech]}
+                  <span style={{ marginLeft: '0.5rem' }}>{tech}</span>
+               </Box>
+            ))}
+         </Box>
          <Box className={'portfolio'} display={'flex'} flexDirection={'column'} gap={'0.5rem'}
               alignItems={'center'} fontSize={'1.5rem'} py={'2rem'}>
             <ButtonGroup color="error" aria-label="medium secondary button group">

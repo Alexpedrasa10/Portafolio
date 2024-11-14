@@ -3,7 +3,7 @@ import Style from './About.module.scss';
 import Terminal from "./Terminal";
 import {Box} from "@mui/material";
 import {info} from "../../info/Info";
-
+import { iconsMap } from '../Icon';
 
 export default function About() {
     const firstName = info.firstName.toLowerCase()
@@ -26,7 +26,7 @@ export default function About() {
         </>;
     }
 
-/*     function experience() {
+     function experience() {
         return <>
             <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd
                 work_experience </p>
@@ -35,42 +35,61 @@ export default function About() {
                 {info.bio}
             </p>
         </>;
-    } */
-
-    function skillsText() {
-        return <>
-            <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd skills
-            </p>
-            <p><span style={{color: info.baseColor}}>skills <span
-                className={Style.green}>(develop)</span> $</span> ls</p>
-
-            <p style={{color: info.baseColor}}> Principal</p>
-            <ul className={Style.skills}>
-                {info.skills.principal.map(proficiency => <li>{proficiency}</li>)}
-            </ul>
-
-            <p style={{color: info.baseColor}}> Databases</p>
-            <ul className={Style.skills}>
-                {info.skills.database.map(database => <li>{database}</li>)}
-            </ul>
-
-            <p style={{color: info.baseColor}}> Cloud</p>
-            <ul className={Style.skills}>
-                {info.skills.cloud.map(cloud => <li>{cloud}</li>)}
-            </ul>
-            
-            <p style={{color: info.baseColor}}> Frontend</p>
-            <ul className={Style.skills}>
-                {info.skills.frontend.map(frontend => <li>{frontend}</li>)}
-            </ul>
-
-            <p style={{color: info.baseColor}}> Proficient With</p>
-            <ul className={Style.skills}>
-                {info.skills.proficientWith.map(proficiency => <li>{proficiency}</li>)}
-            </ul>
-        </>;
     }
 
+        function skillsText() {
+            return (
+                <>
+                    <p><span style={{ color: info.baseColor }}>{firstName}{info.lastName.toLowerCase()} $</span> cd skills</p>
+                    <p><span style={{ color: info.baseColor }}>skills <span className={Style.green}>(develop)</span> $</span> ls</p>
+        
+                    <p style={{ color: info.baseColor }}>Principal</p>
+                    <ul className={Style.skills}>
+                        {info.skills.principal.map(skill => (
+                            <li key={skill}>
+                                {iconsMap[skill]} {skill}
+                            </li>
+                        ))}
+                    </ul>
+        
+                    <p style={{ color: info.baseColor }}>Databases</p>
+                    <ul className={Style.skills}>
+                        {info.skills.database.map(skill => (
+                            <li key={skill}>
+                                {iconsMap[skill]} {skill}
+                            </li>
+                        ))}
+                    </ul>
+        
+                    <p style={{ color: info.baseColor }}>Cloud</p>
+                    <ul className={Style.skills}>
+                        {info.skills.cloud.map(skill => (
+                            <li key={skill}>
+                                {iconsMap[skill]} {skill}
+                            </li>
+                        ))}
+                    </ul>
+        
+                    <p style={{ color: info.baseColor }}>Frontend</p>
+                    <ul className={Style.skills}>
+                        {info.skills.frontend.map(skill => (
+                            <li key={skill}>
+                                {iconsMap[skill]} {skill}
+                            </li>
+                        ))}
+                    </ul>
+        
+                    <p style={{ color: info.baseColor }}>Proficient With</p>
+                    <ul className={Style.skills}>
+                        {info.skills.proficientWith.map(skill => (
+                            <li key={skill}>
+                                {iconsMap[skill]} {skill}
+                            </li>
+                        ))}
+                    </ul>
+                </>
+            );
+        }
     function miscText() {
         return <>
             <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd
@@ -87,8 +106,8 @@ export default function About() {
 
     return (
         <Box display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'}>
-            <Terminal text={aboutMeText()}/>
             <Terminal text={skillsText()}/>
+            <Terminal text={aboutMeText()}/>
             <Terminal text={miscText()}/>
         </Box>
     )
