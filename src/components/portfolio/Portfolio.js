@@ -6,9 +6,9 @@ import {info} from "../../info/Info";
 export default function Portfolio() {
     return (
         <Box>
-            <Grid container display={'flex'} justifyContent={'center'}>
-                {info.portfolio.map(project => (
-                   <Grid item xs={12} md={8}>
+            <Grid container justifyContent="center" spacing={2}>
+                {info.portfolio.map((project, index) => (
+                   <Grid item xs={12} sm={10} md={8} key={index}>
                        <PortfolioBlock 
                             image={project.image} 
                             live={project.live} 
@@ -22,4 +22,4 @@ export default function Portfolio() {
             </Grid>
         </Box>
     );
-};
+}
